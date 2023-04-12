@@ -1,0 +1,133 @@
+.mainContainer{
+    background:black;
+    width:1080px;
+    position:absolute;
+    top:54%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius:10px;
+    overflow:hidden;
+    border:2px solid rgb(0, 166, 255);
+    margin: 100px auto;
+
+    
+}
+.upperSection,.lowerSection{
+    position:relative;
+    margin: 20px;
+    padding:10px 0px;
+    height:50%;
+    border-radius:0px;
+}
+.upperSection{
+    background:black;
+    background-image: url(https://www.maketecheasier.com/assets/uploads/2020/06/Featured-Image-Live-Weather-Wallpapers-Android.jpg.webp);
+    background-size: cover;
+    background-position:center;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* .upperSection::after{
+    position:absolute;
+    content: " ";
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    background:transparent;
+    filter:blur(100px)
+} */
+
+.weatherMain{
+    position:relative;
+    width: 35%;
+    height:80%;
+    filter:blur(0);
+    border-radius: 6px;
+    padding:20px;
+    
+
+}
+.weatherExtra{
+    position:relative;
+    width: 54%;
+    height:80%;
+    border-radius: 6px;
+    text-align: center;
+    padding:20px;
+    /* filter:blur(0); */
+    /* background:transparent; */
+}
+.weatherMain *{
+    padding:4px;
+}
+.weatherExtra p{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding:5px; 
+}
+.weatherExtra p span{
+    margin:auto 20px;
+}
+/* .glassEffect{
+    background:linear-gradient(black,rgba(255, 255, 255, 0.044));
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    filter:blur(10px);
+    z-index:-1;
+    ###this was hardcoded method.####
+    
+} */
+.glass{
+    background: linear-gradient(135deg,rgba(0, 0, 0, 0.707),rgba(255, 255, 255, 0));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 217, 255, 0.075);
+    /* border:2px solid rgba(0, 213, 255, 0); */
+    border-radius:0px;
+}
+.weatherExtra p {
+    margin:13px auto;
+    width:80%;
+    background:rgba(0, 0, 0, 0.384);
+    padding:6px;
+    border-radius:4px;
+    transition:all .3s;
+}
+.weatherExtra p:hover{
+    background:rgba(24, 24, 24, 0.804);
+    transform: scale(1.01);
+    box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.471);
+
+}
+.weather-icon{
+    height:60px;
+    /* background:rgba(175, 174, 174, 0.318); */
+    background:radial-gradient(rgba(213, 213, 213, 0.746),rgba(255, 255, 255, 0));
+    border-radius:50%;
+}
+.lowerSection{
+    background: rgb(0, 0, 0);
+    color: rgb(0, 213, 255);
+    text-align:center;
+    
+}
+.lowerSection h5{
+    /* border-bottom:2px solid white; */
+    letter-spacing: 2px;
+    font-size:23px;
+}
+.weather-img{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
